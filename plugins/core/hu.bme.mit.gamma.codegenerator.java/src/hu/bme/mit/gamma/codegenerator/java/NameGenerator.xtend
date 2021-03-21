@@ -84,7 +84,7 @@ class NameGenerator {
 	/**
 	 * Returns the interface name (implemented by the component) of the given component.
 	 */
-	protected def generatePortOwnerInterfaceName(Component component) {
+	public def generatePortOwnerInterfaceName(Component component) {
 		return component.generateComponentClassName + "Interface";
 	}
 	

@@ -55,7 +55,7 @@ class TypeTransformer {
 	/**
 	 * Returns the Java type equivalent of the Gamma type.
 	 */
-	protected def String transformType(Type type) {
+	public def String transformType(Type type) {
 		switch (type) {
 			IntegerTypeDefinition: {
 				val types = type.getAllValuesOfFrom.filter(org.yakindu.base.types.Type).toSet

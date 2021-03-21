@@ -20,7 +20,7 @@ import org.yakindu.base.types.Event
 
 class Trace {
 	
-	protected final ViatraQueryEngine engine
+	public final ViatraQueryEngine engine
 	
 	new(ViatraQueryEngine engine) {
 		this.engine = engine

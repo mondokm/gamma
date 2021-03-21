@@ -43,7 +43,7 @@ class CompositeComponentCodeGenerator {
 	/**
 	 * Generates the needed Java imports in case of the given composite component.
 	 */
-	protected def generateCompositeSystemImports(CompositeComponent component) '''
+	public def generateCompositeSystemImports(CompositeComponent component) '''
 		import java.util.List;
 		import java.util.LinkedList;
 		
@@ -75,7 +75,7 @@ class CompositeComponentCodeGenerator {
 	/**
 	 * Generates methods for out-event check delegations in the case of composite components.
 	 */
-	protected def CharSequence delegateOutMethods(Port systemPort) '''
+	public def CharSequence delegateOutMethods(Port systemPort) '''
 «««		Simple flag checks
 		«FOR event : systemPort.outputEvents»
 			@Override
