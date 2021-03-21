@@ -30,6 +30,7 @@ GenModel returns GenModel:
 		'trace' traceImports+=[trace::ExecutionTrace | STRING])) |
 		'include' genmodelImports+=[GenModel | STRING]
 	)*
+	('name' name=ID)?
 	(tasks += Task)*
 ;
 
